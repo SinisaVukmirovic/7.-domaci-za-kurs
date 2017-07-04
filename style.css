@@ -1,0 +1,356 @@
+/*general styles*/
+* {
+	box-sizing: border-box;
+}
+
+html body {
+	font-size: 17px;
+	font-family: "Leto", sans-serif;
+	background-color: lightgrey;
+}
+
+/*navbar*/
+nav.top {
+	width: 100%;
+	height: 70px;
+}
+
+nav a.logo {
+	float: left;
+	margin: 10px;
+}
+
+nav.top ul {
+	float: right;
+	list-style: none;
+	margin: 0 20px 0 0;
+	padding: 0px;
+	line-height: 70px;
+}
+
+nav.top ul li {
+	display: inline-block;
+}
+
+nav.top ul li a {
+	text-decoration: none;
+	font-size: 15px;
+	margin-left: 9px;
+	padding: 8px 7px 9px;
+	color: #242424;
+}
+
+nav.top ul li a:hover {
+	opacity: 0.7;	
+}
+
+
+nav.top ul li a.okvir {
+	border: 2px solid #242424;
+	border-radius: 5px;
+	padding: 10px 15px;
+}
+
+nav.top ul li.manji-ekrani {
+	display: none;
+}
+
+/*content*/
+div.outer-wrapper {
+	width: 100%;
+	height: auto;
+}
+
+#where-work-happens {
+	display: block;
+    max-height: 750px;
+    width: auto;
+    padding: 68px;
+    background-color: lightgrey;
+    color: #242424;
+    position: relative;
+}
+
+#where-work-happens-img {
+	position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-image: url(https://a.slack-edge.com/5eb00/img/landing/where_work_happens/illustration_wall.png);
+	background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    height: 550px;
+    width: 595.4px;
+}
+
+#where-work-happens .content {
+	display: block;
+    margin-top: 70px;
+    width: 100%;
+}
+
+.content {
+	max-width: 1014px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#where-work-happens h1.naslov {
+    font-weight: 700;
+    font-size: 94px;
+    line-height: 1;
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 0;
+    z-index: 1;
+}
+
+#where-work-happens div.podnaslov {
+	font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+div.manji-ekrani-podnaslov {		/*za male ekrane*/
+	display: none;
+}
+
+
+sup.asteriks {
+	color: crimson;
+	font-size: 50px;
+}
+
+span.asteriks {
+	color: crimson;
+}
+
+span.join-link {
+	font-size: 14px;
+	color: grey;
+}
+
+span.join-link a {
+	color: #242424;
+}
+
+input.email {
+	height: 50px;
+	width: 200px;
+	padding: 10px;
+    margin-right: 10px;
+    font-size: 15px;
+    border-radius: 3px;
+}
+
+input.button {
+    height: 50px;
+    width: 150px;
+    padding: 5px;
+    background-color: #00b377;  /*tirkizna*/
+    color: whitesmoke;
+    font-size: 15px;
+    border: 0px solid;
+	border-radius: 5px;
+}
+
+span.manji-ekrani-img {
+	display: none;
+}
+
+/*footer*/
+footer {
+    width: 100%;
+    background: whitesmoke;
+    padding: 40px 0 0;
+    color: #9e9ea6;
+}
+
+footer section.links {
+	max-width: 1014px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+footer section div.grid {
+	width: 100%;
+}
+
+div.kolona {
+	display: inline-block;
+	vertical-align: top;
+	width: 23.8%;
+	margin: 0 0 2%;
+    padding-right: 2%;
+}
+
+footer ul {
+	list-style: none;
+	margin-bottom: 0;
+	padding: 0;
+}
+
+footer ul li a {
+	color: grey;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+footer ul li {
+	padding: 5px;
+}
+
+#prva-kol {
+	font-size: 12px;
+	color: orange;
+}
+
+#druga-kol {
+	font-size: 12px;
+	color: red;
+}
+
+#treca-kol {
+	font-size: 12px;
+	color: green;
+}
+
+#cetvrta-kol {
+	font-size: 12px;
+	color: blue;
+}
+
+#icon-srce {
+	font-size: 12px;
+	color: red;
+}
+
+div.footnote section {
+    max-width: 1014px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+div.footnote ul {
+	float: right;
+	margin: 0;
+	padding: 0;
+}
+
+div.footnote ul li {
+	display: inline-block;
+	padding: 10px 20px;
+}
+
+div.footnote a {
+	color: #242424;
+	font-size: 20px;
+	text-decoration: none;
+	padding-top: 20px;
+}
+
+div.footnote {
+	margin-top: 16px;
+    background-color: lightgrey;
+    overflow: hidden;
+    min-height: 50px;
+    height: 50px;
+}
+
+footer div.footnote span {
+	float: left;
+	font-size: 20px;
+	padding: 10px 0px;
+	color: grey;
+}
+
+/*media query*/
+@media screen and (max-width: 750px) {
+	nav.top ul li.manji-ekrani {
+		display: inline-block;
+		float: right;
+	}
+
+	nav.top ul li a {
+		border: 2px solid #242424;
+		border-radius: 5px;
+		padding: 10px 15px;
+	}
+
+	nav.top ul li {
+		display: none;
+	}
+
+	#where-work-happens-img {
+		display: none;
+	}
+
+	#where-work-happens h1.naslov {
+	    font-weight: 600;
+	    font-size: 80px;
+	    line-height: 1;
+	    position: relative;
+	    margin-top: 0;
+	    margin-bottom: 0;
+	    z-index: 1;
+	}
+
+	#where-work-happens div.podnaslov {
+		display: none;
+	}
+
+	input.email {
+		display: block;
+		height: 50px;
+		width: 100%;
+		padding: 10px;
+	    margin-right: 10px;
+	    font-size: 15px;
+	    border-radius: 3px;
+	}
+
+	input.button {
+		display: block;
+	    height: 50px;
+	    width: 100%;
+	    padding: 5px;
+	    background-color: #00b377;  /*tirkizna*/
+	    color: whitesmoke;
+	    font-size: 15px;
+	    border: 0px solid;
+		border-radius: 5px;
+	}
+
+	span.manji-ekrani-img {
+		height: 70px;
+		width: 100%;
+		min-width: 300px;
+	    z-index: 10;
+	    display: block;
+	    
+	    margin-top: 20px;
+	    background-size: contain;
+	    background-repeat: no-repeat;
+	    background-image: url(https://a.slack-edge.com/cbe6f/img/landing/where_work_happens/illos-mobile.png);
+	}
+
+	div.manji-ekrani-podnaslov {
+		box-sizing: border-box;
+		display: block;
+		height: 150px;
+		width: 100%;
+		padding: 0 40px;
+		font-size: 18px;
+    	line-height: 1.4;
+    	margin-bottom: 20px;
+    	background-color: navy;
+    	color: white;
+	}
+}
+
+
